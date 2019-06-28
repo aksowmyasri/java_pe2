@@ -2,6 +2,7 @@ package main.java.com.stackroute.exercise2;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+//Program to find the frequency of words from a given file
 public class FrequencyOfWords {
     public static void main(String[] args) throws IOException {
         frequencyOfWords("src/main/java/com/stackroute/pe2/file.txt");

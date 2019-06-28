@@ -1,5 +1,5 @@
 package main.java.com.stackroute.exercise2;
-
+//Program to read fles and convert the content to upper case
 import java.io.*;
 
 public class ReadFile {

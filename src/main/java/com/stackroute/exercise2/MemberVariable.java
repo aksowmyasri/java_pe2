@@ -1,5 +1,5 @@
 package main.java.com.stackroute.exercise2;
-
+//class to nitiate variables and print them;
 public class MemberVariable
 {
     Member member = new Member();

@@ -1,5 +1,5 @@
 package main.java.com.stackroute.exercise2;
-
+//Program to print factorials of given range
 public class Factorial {
     public String getFactorial(int number )
     {

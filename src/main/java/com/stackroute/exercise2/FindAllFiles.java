@@ -3,7 +3,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Scanner;
-
+//Program to find all files in a given directory
 public class FindAllFiles {
     public static String findAndReadFiles(String[] names) throws IOException {
         try {

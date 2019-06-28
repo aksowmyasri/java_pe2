@@ -1,5 +1,5 @@
 package main.java.com.stackroute.exercise2;
-
+//Program to check whether the integer is power of four
 public class PowerOfFour {
     public String checkWhetherNumberIsPowerOfFour(int input) {
         if (input == 1)

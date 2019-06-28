@@ -1,5 +1,5 @@
 package main.java.com.stackroute.exercise2;
-
+//Program to check whether plaindrome or not
 public class Palindrome {
     public static String checkForPalindrome(String input)
     {

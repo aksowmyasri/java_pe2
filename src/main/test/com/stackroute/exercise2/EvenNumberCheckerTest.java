@@ -1,18 +1,18 @@
 package main.test.com.stackroute.exercise2;
 
-import main.java.com.stackroute.exercise2.EvenNum;
+import main.java.com.stackroute.exercise2.EvenNumberChecker;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class EvenNumTest {
-    EvenNum e;
+public class EvenNumberCheckerTest {
+    EvenNumberChecker e;
     @Before
     public void setUp() throws Exception
     {
-        e= new EvenNum();
+        e= new EvenNumberChecker();
     }
 
     @After

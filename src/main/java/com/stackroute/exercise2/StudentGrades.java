@@ -1,5 +1,5 @@
 package main.java.com.stackroute.exercise2;
-
+//Program to take student grades and display average,maximum,minimum
 public class StudentGrades
 {
     public int studentMin(int number,int studentArray[])
