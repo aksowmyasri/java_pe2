@@ -18,7 +18,8 @@ public class ReadFile {
             len=rev.length();
             bufferedReader.close();
         } catch (IOException e) {
-            return "not found";
+            rev="";
+            rev="not found";
         }
         return rev.toUpperCase();
     }

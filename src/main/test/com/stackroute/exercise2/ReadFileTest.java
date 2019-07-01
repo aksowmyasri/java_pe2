@@ -24,9 +24,15 @@ public class ReadFileTest {
     }
 
     @Test
-    public void checkReadFile()
+    public void givenInputFileNameReturnContentInpperCase()
     {
         String str = f.checkReadFile(new File("testout"));
         assertEquals("THIS IS A PROGRAM TO READ A FILE.",str);
+    }
+    @Test
+    public void givenInputWrongFileReturnNotFound()
+    {
+        String str = f.checkReadFile(new File("out"));
+        assertEquals("NOT FOUND",str);
     }
 }

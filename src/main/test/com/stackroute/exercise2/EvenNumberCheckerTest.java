@@ -8,29 +8,29 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class EvenNumberCheckerTest {
-    EvenNumberChecker e;
+    EvenNumberChecker evenNumberChecker;
     @Before
     public void setUp() throws Exception
     {
-        e= new EvenNumberChecker();
+        evenNumberChecker= new EvenNumberChecker();
     }
 
     @After
     public void tearDown() throws Exception
     {
-        e=null;
+        evenNumberChecker=null;
     }
 
     @Test
-    public void testNumberIsEven()
+    public void givenInputNumberReturnTrue()
     {
-        boolean b = e.isEven(4);
+        boolean b = evenNumberChecker.isEven(4);
         assertEquals(true,b);
     }
     @Test
-    public void testNumberIsOdd()
+    public void givenInputNUmberREturnFalse()
     {
-        boolean b = e.isEven(5);
+        boolean b = evenNumberChecker.isEven(5);
         assertEquals(false,b);
     }
 }

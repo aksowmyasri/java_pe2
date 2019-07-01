@@ -22,8 +22,9 @@ public class MemberVariableTest {
     }
 
     @Test
-    public void printValues() {
+    public void givenInputNameAndSalaryReturnNameAgeSalary() {
         String result = member.printValues("Harry Potter",30,2500.3);
         assertEquals("Members Name:Harry Potter\n"+"Members Age:30\n"+"Members Salary:2500.3",result);
     }
+
 }

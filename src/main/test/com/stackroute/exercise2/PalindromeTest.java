@@ -9,30 +9,30 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class PalindromeTest {
-    Palindrome pobj;
+    Palindrome palindrome;
     @Before
     public void setUp()
     {
-        pobj=new Palindrome();
+        palindrome=new Palindrome();
     }
     @After
     public void tearDown()
     {
-        pobj=null;
+        palindrome=null;
     }
     @Test
-    public void checkForStringPalindrome() {
-        String result=pobj.checkForPalindrome("madam");
+    public void givenInputStringReturnPalindrome() {
+        String result=palindrome.checkForPalindrome("madam");
         assertEquals("madam is a palindrome",result);
     }
     @Test
-    public void checkForNumberPalindrome() {
-        String result=pobj.checkForPalindrome("1234321");
+    public void givenInputNumberReturnPalindrome() {
+        String result=palindrome.checkForPalindrome("1234321");
         assertEquals("1234321 is a palindrome",result);
     }
     @Test
-    public void checkForNotPalindrome() {
-        String result=pobj.checkForPalindrome("mada");
+    public void givenInputStringReturnNotPalindrome() {
+        String result=palindrome.checkForPalindrome("mada");
         assertEquals("mada is not a palindrome",result);
     }
 

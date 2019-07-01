@@ -18,14 +18,14 @@ public class FindAllFilesTest {
     }
 
     @Test
-    public void checkWhetherFileContentIsCorrect() throws IOException {
+    public void givenInputFileNameReturnContentOfThatFile() throws IOException {
         actualResult = findAllFiles.findAndReadFiles(new String[] {"src/", "file"});
         expectedResult = "Calculates the frequency of the words in a given file";
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void checkWhetherFileIsPresent() throws IOException {
+    public void givenWrongInputReturnException() throws IOException {
         actualResult = findAllFiles.findAndReadFiles(new String[] {"", "file"});
         expectedResult = "Exception";
         assertEquals(expectedResult, actualResult);

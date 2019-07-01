@@ -8,29 +8,29 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class PowerOfFourTest {
-    PowerOfFour pobj;
+    PowerOfFour powerOfFour;
     @Before
     public void setUp() throws Exception
     {
-        pobj=new PowerOfFour();
+        powerOfFour=new PowerOfFour();
     }
 
     @After
     public void tearDown() throws Exception
     {
-        pobj=null;
+        powerOfFour=null;
     }
 
     @Test
-    public void checkWhetherNumberIsPowerOfFour()
+    public void givenInputNumberReturnPowerOfFour()
     {
-        String result = pobj.checkWhetherNumberIsPowerOfFour(16);
+        String result = powerOfFour.checkWhetherNumberIsPowerOfFour(16);
         assertEquals("a power of 4",result);
     }
     @Test
-    public void checkWhetherNumberIsNotPowerOfFour()
+    public void givenInputNumberReturnNotPowerOfFour()
     {
-        String result = pobj.checkWhetherNumberIsPowerOfFour(15);
+        String result = powerOfFour.checkWhetherNumberIsPowerOfFour(15);
         assertEquals("not a power of 4",result);
     }
 
